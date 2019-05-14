@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vorsk.M365.toolbox.main.DeviceActivity"
+    android:keepScreenOn="true">
+
+    <TableLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TableRow android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/connect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="connect"
+                android:text="re-/connect" />
+            <TextView
+                android:id="@+id/conn_status"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="disconnected"
+                android:textSize="20sp"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/get_sn_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getSN"
+                android:text="Get SN" />
+            <TextView
+                android:id="@+id/sndata"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="\????"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/get_pw_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getPW"
+                android:text="Get PW" />
+
+            <TextView
+                android:id="@+id/pwdata"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="******"
+                android:textSize="20sp"
+                android:onClick="selectPW"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/set_pw_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setPW"
+                android:text="Set PW" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/sndata"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:text="******"-->
+                <!--android:textSize="20sp"-->
+                <!--android:onClick="selectPW"/>-->
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/unlock_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="unlock"
+                android:text="Unlock" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/sndata"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:text="******"-->
+            <!--android:textSize="20sp"-->
+            <!--android:onClick="selectPW"/>-->
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/lock_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="lock"
+                android:text="Lock" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/sndata"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:text="******"-->
+            <!--android:textSize="20sp"-->
+            <!--android:onClick="selectPW"/>-->
+        </TableRow>
+
+
+
+
+
+
+
+
+    </TableLayout>
+
+</LinearLayout>
